@@ -78,18 +78,6 @@ A security-first, full-stack setup logbook and community platform for motorcycle
 
 <br/>
 
-**[Properly: Landlord Operations](https://github.com/CTran10/Properly)**
-<br/><sub>FastAPI, Next.js App Router, PostgreSQL (RLS), Supabase, Cloudflare R2, TypeScript</sub>
-
-A multi-tenant landlord operations app for tracking properties, units, expenses, vendors, photos, and tax-season exports — built in vertical slices so each shipped feature has API, UI, tenancy, validation, and tests.
-
-- **Tenant isolation by default:** account-scoped data with Postgres RLS policies, Supabase-issued JWTs verified by the API via JWKS, and tenant-scoped request context.
-- **Money done right:** integer-cents accounting across a vendors/expenses ledger with filtering, soft deletes, yearly category totals, and read-only accountant access.
-- **Secure file handling:** private Cloudflare R2 presigned upload/download with checksum and magic-byte verification on property photos.
-- **Layered quality gate:** Vitest, ESLint, Stylelint, pytest, Ruff, and mypy wired into GitHub Actions CI for both frontend and backend.
-
-<br/>
-
 **[Clearance: Event-Driven Authorization](https://github.com/CTran10/clearance)**
 <br/><sub>Go, PostgreSQL, Redis, Redpanda (Kafka), Docker Compose</sub>
 
@@ -99,6 +87,18 @@ A Go transaction-authorization platform built to explore the reliability pattern
 - **Reliability primitives:** idempotency keys with payload-conflict detection, automatic retries with dead-letter handling, correlation-ID propagation, and an immutable double-entry ledger with explicit DB constraints.
 - **Trust boundaries taken seriously:** bearer auth with constant-time comparison, request-size limits, strict validation, parameterized SQL, CORS allowlists, and Redis-backed rate limiting.
 - **Tested where it matters:** `go test ./...` covers idempotency, outbox/retry/DLQ behavior, ledger writes, and auth paths, with CI validating tests, `go vet`, and the Compose stack.
+
+<br/>
+
+**[Properly: Landlord Operations](https://github.com/CTran10/Properly)**
+<br/><sub>FastAPI, Next.js App Router, PostgreSQL (RLS), Supabase, Cloudflare R2, TypeScript</sub>
+
+A multi-tenant landlord operations app for tracking properties, units, expenses, vendors, photos, and tax-season exports — built in vertical slices so each shipped feature has API, UI, tenancy, validation, and tests.
+
+- **Tenant isolation by default:** account-scoped data with Postgres RLS policies, Supabase-issued JWTs verified by the API via JWKS, and tenant-scoped request context.
+- **Money done right:** integer-cents accounting across a vendors/expenses ledger with filtering, soft deletes, yearly category totals, and read-only accountant access.
+- **Secure file handling:** private Cloudflare R2 presigned upload/download with checksum and magic-byte verification on property photos.
+- **Layered quality gate:** Vitest, ESLint, Stylelint, pytest, Ruff, and mypy wired into GitHub Actions CI for both frontend and backend.
 
 ---
 
