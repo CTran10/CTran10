@@ -11,7 +11,7 @@
 - 🤖 At **Breef** (B2B SaaS) I build the AI tooling *and* the **LLM evaluation service** that proves it works in production.
 - ⚡ I cut query counts on critical API endpoints by up to **93%**, dropped endpoint database workload by roughly **70%**, and improved p90 latency by **56%**.
 - 🐛 I caught an LLM token-accounting bug that would have overstated AI cost by about **6x**, the kind of issue a real eval harness exists to surface.
-- 🏍️ I build portfolio-grade systems on the side: **Apex** (security-first rider setup logbook + community), **Properly** (landlord operations), and **Clearance** (event-driven payment authorization in Go).
+- 🏍️ I build portfolio-grade systems on the side: **Apex** (security-first rider setup logbook + community), **Clearance** (event-driven payment authorization in Go), and **Properly** (landlord operations),.
 - 🎓 B.S. Computer Science, **Colorado School of Mines**, 2026.
 - 💬 Ask me about FastAPI, PostgreSQL and RLS, event-driven systems, LLM evaluation, and backend performance.
 - 📫 Reach me at **calvintran1027@gmail.com**.
